@@ -1,0 +1,84 @@
+
+.formContainer {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #2b2b2b;
+}
+h4,h2{
+  color: #2b2b2b;
+  grid-column: 1/-1;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  color: #2b2b2b;
+}
+/* imagen odontograma provisorio */
+
+.odontograma{
+ width: 70%;
+ height: 500px;
+margin-top: 10px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  color: #2b2b2b;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  
+}
+
+.input {
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.formGroup1{
+display: grid;
+}
+.submitButton {
+  border: solid 1px #2986fc;
+  background-color: white;
+  color: #2b2b2b;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+   grid-column:1/-1;
+  width: 100%;
+  margin-top: 10px;
+}
+.submitButton:focus{
+  background-color: #EAF3FF;
+}
+
+@media(min-width: 701px) and (max-width: 835px){
+.form{
+  grid-template-columns: auto auto;
+  font-size: 14px;
+} 
+.formGroup1{
+  display: grid;
+  grid-column: 1/-1;
+  width: 100%;
+}
+}
+
+@media(min-width: 390px) and (max-width: 700px){
+
+.form{
+  grid-template-columns: auto;
+  font-size: 12px;
+} 
+
+}
+

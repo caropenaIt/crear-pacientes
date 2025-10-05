@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #c5c5c5;
+  box-shadow: 2px 5px 5px 5px #c5c5c5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+h3,.searchContainer{
+  color: #2b2b2b;
+}
+.searchContainer {
+  margin-bottom: 10px;
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+input, select, .searchInput, .item{
+  border: solid #2986fc 2px;
+  border-radius: 5px;
+}
+
+.editar{
+  width: 25px;
+  height: 25px;
+}
+
+.addButton {
+  width: 100%;
+  background-color: #2986fc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+span{
+  position: sticky;
+ margin-right: 30px;
+ font-weight: bold;
+}
+
+
+.bottomButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: white;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.menu{
+  display: none;
+}
+
+.viewPatientContainer {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.viewActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.item{
+  width: 100%;
+
+}
+.lista{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.lista > .button{
+  width: 60%;
+  height: 5%;
+}
+.tituloLista{
+  width: 70%;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mobileTitulo{
+  display: none;
+}
+
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.paginacion button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.paginacion button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.paginacion button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.paginacion span {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+/* FOOTER MARCA PERSONAL */
+header{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  .logoMarca{
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+
+  }
+  a:hover{
+      color: #007bff;
+      text-decoration: underline;
+    }
+}
+
+
+/* Responsive */
+@media(min-width: 701px) and (max-width: 836px){
+.menu{
+  display: none;
+}
+  .bottomButtons{
+    margin-top: 20px;
+    display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  }
+
+}
+
+
+@media(min-width: 390px) and (max-width: 700px){
+  header{
+    flex-direction: column;
+    
+  }
+  .menu{
+    display: flex;
+  }
+  .header{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  h2,h3,h4{
+    font-size: 16px;
+  }
+
+  .bottomButtons{
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .paginacion span{
+  margin-left: 180px;
+}
+
+
+ .lista{
+  flex-wrap: wrap;
+   box-shadow: 2px 2px 5px 5px #c5c5c5;
+ }
+ .button{
+  margin-bottom: 10px;
+ }
+ .tituloLista{
+  display: none;
+ }
+ .mobileTitulo{
+  display: flex;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+}
